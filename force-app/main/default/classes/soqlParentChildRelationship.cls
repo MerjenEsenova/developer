@@ -2,7 +2,7 @@ public class soqlParentChildRelationship {
     public static void childToParent() {
         list<contact> lstcontact = [select id, name, Account.Id, Account.Name from Contact];
         for (Contact eachCon : lstcontact){
-            system.debug('Contact account Id is ' + eachCon.Account.Id + ' and its account name is ' + eachCon.Name);
+            system.debug('Contact account Id is ' + eachCon.Account.Id + ' and its account name is ' + eachCon.Account.Name);
         }
     }
     public static void parentToChild() {
